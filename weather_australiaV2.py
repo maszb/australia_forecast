@@ -146,7 +146,7 @@ Certaines variables marchent par couple :  données à 9 heures du matin et une 
         st.markdown("""
         Les villes ne sont pas équitablement réparties sur le territoire. Le centre du pays est clairement sous représenté.
         """)
-        st.image("images//carte_villes.PNG")
+        st.image("images//carte_villes.png")
 
 if page == pages[2]:
     st.header("Analyse des données")
@@ -157,8 +157,8 @@ if page == pages[2]:
     Choix des variables :\n
     Description des variables du dataset  
     """)
-    st.image("images//variable1.PNG")
-    st.image("images//variable2.PNG")
+    st.image("images//variable1.png")
+    st.image("images//variable2.png")
 
     st.header("Analyse statistique du dataset")
     st.markdown("""
@@ -173,7 +173,7 @@ if page == pages[2]:
     st.markdown("""
     En analysant le graphique, on constate que pour les variables Pluie et Évaporation, les valeurs extrêmes sont situées au-dessus du troisième quartile. Conformément au tableau ci-dessus, nous pouvons déduire que ce n'est qu'à certaines périodes de l'année que la quantité de précipitations est supérieure à la moyenne. Il en va de même pour la variable Evaporation et la variable Vitesse du vent. Contrairement à ces variables, la variable humidité enregistrée à 9h du matin est caractérisée par un faible nombre d'outils, qui se situent en dessous du premier quartile. En entrant dans le détail, il est intéressant de noter où les plus fortes précipitations ont été enregistrées en huit ans d'échantillonnage. Le graphique cumulatif de la variable "précipitations" pour les différentes stations météorologiques et années est présenté ci-dessous.
     """)
-    st.image("images//region.PNG")
+    st.image("images//region.png")
     st.markdown("""
     Les graphiques montrent que les villes caractérisées par de fortes précipitations sont Cairns, Darwin, Coffs Harbour, Gold Coast et enfin Wollongong. Ces stations météorologiques sont situées respectivement dans les régions NSW, QUE, VIC, WAU et NTE. Si l'on prend la variable RainFall comme indicateur, les années caractérisées par de fortes précipitations sont 2010 et 2011. Les graphiques cumulatifs de la variable catégorielle RainToday et RainTomorrow sont présentés ci-dessous.
     """)
@@ -226,7 +226,7 @@ if page == pages[2]:
     st.markdown("""
     Nous avons lancé un SlectFromModel afin d’identifier les meilleures features pour nos prédictions sur le jeu de données Tasmanie et Norfolk Island. Voici le résultat :
     """)
-    st.image("images//features.PNG")
+    st.image("images//features.png")
     st.markdown("""
     
     Nous avons choisi de conserver toutes les variables car il y en a assez peu dans la dataset, mais nous aurons au moins fait cet exercice qui confirme assez les tests de Cramer fait également.
@@ -246,7 +246,7 @@ if page == pages[2]:
     Enfin les lignes ou RainToday et RainTommorrow sont à null sont également supprimées.
 
     """)
-    st.image("images//variable3.PNG")
+    st.image("images//variable3.png")
 
     st.header("Ajout des nouvelles variables")
     st.markdown("""
@@ -338,13 +338,13 @@ if page == pages[4]:
     st.markdown("""
     L’entrainement de données a été fait avec et sans over-sampling. Les 2 dataset ont été réunis car les données étaient peu nombreuses et le dataset final comporte 5905 lignes. Les modèles ont été entrainés sur les 5905 lignes. Enfin, Nous avons lancé un GridCVSearch afin de trouver les meilleurs paramètres.
     """)
-    st.image("images//modele3.PNG")
+    st.image("images//modele3.png")
 
     st.subheader("New South Wales ")
     st.markdown("""
     Comme mentionné dans la section précédente, les données de la variable catégorielle, RainTomorrow, ne sont pas équilibrées. Par conséquent, cela peut entraîner des prédictions peu fiables sur les données examinées. Comme indiqué précédemment dans la section sur les modèles de classification des îles, il a été décidé de traiter les données par la méthode du suréchantillonnage. En outre, compte tenu des prévisions au niveau national, la méthode de régression logistique était coûteuse en termes de calcul. En combinant ces considérations, il a été décidé que pour les régions administratives de Victoria (VIC) et de New South Wales (NSW), les méthodes de classification à employer sont KNN et RandomForest. En outre, notre décision est motivée par le fait que ces deux régions ont le plus grand nombre de stations météorologiques, ce qui pourrait les rendre représentatives de l'ensemble de la base de référence. Afin d'obtenir une image claire, nous avons d'abord choisi de traiter ces deux régions administratives séparément, puis de les traiter ensemble. 
     """)
-    st.image("images//modele4.PNG")
+    st.image("images//modele4.png")
 
     st.subheader("Synthèse des entrainements")
     st.image("images//synthese.png")
@@ -360,12 +360,12 @@ if page ==pages[5]:
     Ci-dessous, une image de la variable RainTomorrow pour la journée du 2017/04/11.
 
     """)
-    st.image("images//graphique1.PNG")
+    st.image("images//graphique1.png")
     st.markdown("""
     Le jeu de base utilisé est le jeu complété, c'est-à-dire celui dans lequel certaines villes ont été retirées parce que la variable RainTomorrow n'a pas été enregistrée expérimentalement à cette date spécifique, il n'est pas surprenant que certaines villes ne soient pas présentes sur la carte.\n
     Comme cet exemple de démonstration est réalisé sur la région de New South Wales, la prévision pour les villes situées dans cette région est présentée ci-dessous.
     """)
-    st.image("images//graphique2.PNG")
+    st.image("images//graphique2.png")
 
     st.markdown("""
     On observe que le 2017/04/11, il a plu sur le littoral de la région de New South Wales, plus précisément autour de la ville de Sidney. En revanche, dans les villes les plus proches (par exemple), la journée a été ensoleillée. Cela crée une zone limite très fine et la précision de la méthode en question est donc mise à l'épreuve.  
@@ -375,7 +375,7 @@ if page ==pages[5]:
     Voici le résultat de la prédiction sur la région NSW.
 
     """)
-    st.image("images//graphique3.PNG")
+    st.image("images//graphique3.png")
     st.markdown("""
     Comme on peut le voir sur la figure, la variable RainTomorrow le 2017/04/11 n'a été prédite que pour 3 villes (Albury, Canberra, et Richmond). Ceci est cohérent avec le fait que lors de l'étape de division de l'ensemble de données en test et formation, l'échantillon de formation représente 20% de l'ensemble de données.
     """)
