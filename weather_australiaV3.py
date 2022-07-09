@@ -228,7 +228,7 @@ if page == pages[2]:
 
     """)
 
-    st.header("Selection des variables à abandonner")
+    st.header("Selection des variables et des données à abandonner")
     st.markdown("""
     MaxTemp est la température maximale de la journée. Elle est très proche de Temp9am. Nous avons donc décidé de dropper Temp9am
     MinTemp est la température prise à 9 heures. Elle correspond à Temp9am. Nous avons donc décidé de dropper Temp9am.
@@ -239,7 +239,7 @@ if page == pages[2]:
     Nous nous séparons de Katherine et Launceston. Il y a trop peu de données exploitables et pas de ville radar pertinentes pour ces 2 villes.
     Par ailleurs nous nous séparons aussi des années incomplètes (qui ne s’étalent pas du 1er janvier au 31 décembre).
     Enfin les lignes ou RainToday et RainTommorrow sont à null sont également supprimées.
-
+    \n\n
     """)
     st.image("images//variable3.png")
 
@@ -271,10 +271,10 @@ if page == pages[2]:
     Nous avons parcouru les sites donnés dans la fiche projet et nous avons principalement exploité le site météo du gouvernement australien  (http://www.bom.gov.au) d’où sont tirées les données météorologiques du pays. 
 
     Le principe est de fonctionner sur la notion de radar : zone de quelques kilomètres autour d’une ville où l’estimation du temps s’applique aux villes environnantes. 
-    Nous avons repris cette notion de ville radar pour notre projet et l’avons appliqué à notre jeu de données (page suivante exemple avec Moree).
+    Nous avons repris cette notion de ville radar pour notre projet et l’avons appliqué à notre jeu de données (ci-dessous exemple avec Moree).\n
     """)
     st.image("images//carteradar.png")
-    st.image("images//carteaustralie1.png")            st.markdown("""        Ci-dessous la répartition des villes radar de notre dataset (en rouge)     """)    st.image("images//carteaustralie2.png")                st.header("Etude des séries temporelles")        st.markdown("""    Le résultat n’est pas concluant, le manque de mémoire fait planter le traitement. Réduction du nombre de lignes à traiter en enlevant quelques années (on a conservé 3 ans et demi), mais le résultat reste le même bien que la mémoire cherchant à être allouée est de 4Go.  Passer en dessous de 3 ans et demi est moins pertinent pour ce modèle, nous avons donc abandonné cette piste.\n    """)        st.image("images//encartST.png")            
+    st.markdown("""    \n\n    """)        st.image("images//carteaustralie1.png")            st.markdown("""    \n\n    Ci-dessous la répartition des villes radar de notre dataset (en rouge)     """)    st.image("images//carteaustralie2.png")        st.markdown("""    \n\n    Ci-dessous la répartition des villes radar de notre dataset (en rouge)     """)        st.header("Etude des séries temporelles")        st.markdown("""    Le résultat n’est pas concluant, le manque de mémoire fait planter le traitement. Réduction du nombre de lignes à traiter en enlevant quelques années (on a conservé 3 ans et demi), mais le résultat reste le même bien que la mémoire cherchant à être allouée est de 4Go.  Passer en dessous de 3 ans et demi est moins pertinent pour ce modèle, nous avons donc abandonné cette piste.\n    """)        st.image("images//encartST.png")            
 if page == pages[3]: 
     st.header("Algorithme choisi")
     st.markdown("""
