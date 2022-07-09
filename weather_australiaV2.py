@@ -316,8 +316,8 @@ if page == pages[4]:
     st.markdown("""
     Pour tout le dataset avec et sans OverSampling, nous avons obtenus les résultats suivants:
     """)
-    st.image("images//modele1.PNG")
-    st.image("images//modele2.PNG")
+    st.image("images//modele1.png")
+    st.image("images//modele2.png")
     st.markdown("""
     Ne voulant pas tirer de conclusions immédiates sur ces résultats, où nous aurions pu dire que le KNN SANS Oversampling nous paraissait être le meilleur estimateur, ayant les meilleures performances pour la variable cible minoritaire (positive , à 1), mais aussi le Meilleur taux de performance moyen pour toutes les predictions positives et negatives. Nous avons souhaité aller au-delà, et approfondir nos tests.\n
 
