@@ -335,7 +335,7 @@ if page == pages[4]:
     """)
     st.image("images//modele4.png")
 
-    st.subheader("Synthèse des entrainements")        
+    st.subheader("Synthèse des entrainements")        st.markdown("""    \n\n    """)
     st.image("images//synthese.png")
 
 if page ==pages[6]:
@@ -386,4 +386,4 @@ if page == pages[5]:
     Nous avons tenté de prédire la vitesse du vent avec Ridge et Lasso mais les résultats n’ont pas été pas concluants.
 
     """)if page == pages[7]:
-        st.header("Entrainer nos modèles")        region=st.selectbox("Choisissez une région", ('New South Wales', 'Western Australia', 'Tasmanie'))              st.markdown("""    \n    """)        model=st.selectbox("Choisissez un modèle", ['KNN', 'Random Forest'])        st.markdown("""    \n    """)        Over=st.radio("votre choix OverSampling", ('Avec', 'Sans'))        if Over=='Avec':                st.write('Vous avez choisi le modèle ', model, 'pour la région ',region, ' avec OverSampling')    else:        st.write('Vous avez choisi le modèle ', model, 'pour la région ',region, ' sans OverSampling')            
+        st.header("Entrainer nos modèles")        region=st.selectbox("Choisissez une région", ('New South Wales', 'Western Australia', 'Tasmanie'))              st.markdown("""    \n    """)        model=st.selectbox("Choisissez un modèle", ['KNN', 'Random Forest'])        st.markdown("""    \n    """)        Over=st.radio("Votre choix OverSampling", ('Avec', 'Sans'))    st.markdown("""    \n\n    """)        if Over=='Avec':                st.write('Vous avez choisi le modèle ', model, 'pour la région ',region, ' avec OverSampling')    else:        st.write('Vous avez choisi le modèle ', model, 'pour la région ',region, ' sans OverSampling')            
