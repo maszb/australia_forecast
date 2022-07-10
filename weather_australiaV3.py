@@ -213,7 +213,7 @@ if page == pages[2]:
     MaxTemp a un effet statistique significatif sur RainTomorrow
     Evaporation a un effet statistique significatif sur RainTomorrow
 
-    Nous avons aussi fait les tests HI2 et Anova entre Cloud et Humidity, pour jauger la corrélation entre ces variables. Les tests ont montré un effet statistique significatif entre Cloud9am et Humidity9am et entre Cloud3pm et Humidity3pm. Comme Cloud9am et Cloud3pm comportaient trop de NaN, nous avons donc choisi de nous séparer des 4 variables.
+    Nous avons aussi fait les tests HI2 et Anova entre Cloud et Humidity, pour jauger la corrélation entre ces variables. Les tests ont montré un effet statistique significatif entre Cloud9am et Humidity9am et entre Cloud3pm et Humidity3pm.\n    Pour ces raisons de "non indépendance" des variables Cloud9am et Humidity9am,  puis de Cloud3pm et Humidity3pm, et sachant que Cloud9am et Cloud3pm comportent près de 60 000 valeurs de NaN chacune (au niveau du dataset total qui comportent près de 142 000 lignes), nous avons décidé de nous séparer de ces deux variables Cloud9am et Cloud3pm.\n\n
 
     """)
 
@@ -221,7 +221,7 @@ if page == pages[2]:
     st.markdown("""
     Nous avons lancé un SlectFromModel afin d’identifier les meilleures features pour nos prédictions sur le jeu de données Tasmanie et Norfolk Island. Voici le résultat :
     """)
-    st.image("images//features.png")
+    st.image("images//SelectBest.png")
     st.markdown("""
     
     Nous avons choisi de conserver toutes les variables car il y en a assez peu dans le dataset, mais nous aurons au moins fait cet exercice qui confirme assez les tests de Cramer fait également.
@@ -230,16 +230,10 @@ if page == pages[2]:
 
     st.header("Selection des variables et des données à abandonner")
     st.markdown("""
-    MaxTemp est la température maximale de la journée. Elle est très proche de Temp9am. Nous avons donc décidé de dropper Temp9am
-    MinTemp est la température prise à 9 heures. Elle correspond à Temp9am. Nous avons donc décidé de dropper Temp9am.
-    Le même constat a été fait pour les variables WindDir9am, WindDir3pm, WindSpeed9am, WindSpeed3pm.
-    En revanche Pressure9am et Pressure3pm n’ont pas d’équivalence, nous les avons donc gardées toutes les deux.
-    Humidityxx (aucune valeur maximum ou minimum équivalente) peut prendre jusqu’à 100 valeurs différentes.    Les analyses ont montré un effet statistique significatif sur les variables CloudXX. Or les variables Cloud9am et Cloud3pm ont de nombreux NaN.\n        """)        st.image("images//varaband.png")
+    MaxTemp est la température maximale de la journée. MinTemp est la température minimale de la journée. 
+    Temp9am est la température mesurée à 9 heures du matin. Temp3pm est la température mesurée à 15 h.\n         L'information des températures à 9h du matin et à 15h de l'après-midi semblent redondantes avec les infos des températures extrêmes de la journée (qui semblent plus importantes).     Nous avons choisi de garder MaxTemp et MinTemp et d'abandonner Temp9am et Temp3pm.\n    Nous constatons la même chose pour la Direction du Vent (WindGustDir, WindDir9am, WindDir3pm), et la Vitesse du Vent (WindGustSpeed, WindSpeed9am, WindSpeed3pm), où nous avons les variables WindGustDir  désignant la direction du vent le plus fort de la journée, et WindGustSpeed la vitesse du vent le plus fort de la journée, qui semblent donner des infos plus importantes, que les variables regroupant les observations du vent à 9h du matin et 15 de l'après-midi.     Pour cette raison, nous avons choisi de garder WindGustDir et WindGustSpeed et d'abandonner WindDir9am, WindDir3pm,  WindSpeed9am, WindSpeed3pm.\n        Les variables Pressure9am et  Pressure3pm donnent les niveaux de la Pression Atmosphérique à 9h du matin et à 15h de l'après-midi.\n         Les variables Humidity9am et Humidity3pm donnent les pourcentages d'humidité dans l'air mesurés toujours à 9h du matin et à 15h de l'après-midi.     Ces quatre variables seront conservées, toutes les quatre, car nous ne pouvons affirmer que Pressure3pm soit redondante avec Pressure9am, et vice-versa.\n         De même pour les deux variables Humidity9am et Humidity3pm.        En raison de la dépendance des variables Cloud9am avec Humidity9am et Cloud3pm avec Humidity3pm, et surtout du très grand nombre de valeurs manquantes dans les variables Cloud9am et Cloud3pm, nous avons décidé d'abandonner Cloud9am et Cloud3pm.\n\n        """)        st.image("images//varaband.png")
     st.markdown("""
-    Nous nous séparons de Katherine et Launceston. Il y a trop peu de données exploitables et pas de ville radar pertinentes pour ces 2 villes.
-    Par ailleurs nous nous séparons aussi des années incomplètes (qui ne s’étalent pas du 1er janvier au 31 décembre).
-    Enfin les lignes ou RainToday et RainTommorrow sont à null sont également supprimées.
-    \n\n
+    Nous nous séparons de Katherine et Launceston. Il y a trop peu de données exploitables et pas de ville radar pertinentes pour ces 2 villes.\n    Par ailleurs nous nous séparons aussi des années incomplètes (qui ne s’étalent pas du 1er janvier au 31 décembre).\n    Enfin nous avons supprimé les lignes où RainToday et/ou RainTommorrow comportent des valeurs manquantes NaNs.\n\n
     """)
     st.image("images//variable3.png")
 
@@ -328,7 +322,7 @@ if page == pages[4]:
     TAS/NIS: Tasmania / Norfolk Islands\n
     Les régions du Queensland et du North, situées au Nord du continent ont été retirées des calculs, car la quantité des données figurant dans le dataset d’origine n’était pas suffisante.
 
-    """)    st.subheader("South Australia et Western Australia")    st.markdown("""    L’entrainement de données a été fait avec et sans over-sampling. Les 2 dataset ont été entrainés séparemment. Enfin, Nous avons lancé un GridCVSearch afin de trouver les meilleurs paramètres.\n        Le dataset South Australia comportait 8853 lignes et celui de Western Australia 23 203 lignes.\n    """)        st.image("images//modele2.png")                
+    """)    st.subheader("South Australia et Western Australia")    st.markdown("""    L’entrainement de données a été fait avec et sans over-sampling. Les 2 dataset ont été entrainés séparemment. Enfin, Nous avons lancé un GridCVSearch afin de trouver les meilleurs paramètres.\n        Le dataset South Australia comportait 8853 lignes et celui de Western Australia 23 203 lignes.\n        La Logistic Regression  avec Oversampling donne pratiquement les mêmes résultats que Random Forest avec Oversampling et dans ce cas, vaut mieux adopter le modèle ayant le traitement le plus rapide.\n\n    """)        st.image("images//modele2.png")                
     st.subheader("Tasmanie et Norfolk Island")
     st.markdown("""
     L’entrainement de données a été fait avec et sans over-sampling. Les 2 dataset ont été réunis car les données étaient peu nombreuses et le dataset final comporte 5905 lignes. Les modèles ont été entrainés sur les 5905 lignes. Enfin, Nous avons lancé un GridCVSearch afin de trouver les meilleurs paramètres.
@@ -387,9 +381,9 @@ if page == pages[5]:
     """)
     st.image("images//conclusion2.png")
     st.markdown("""
-    En conclusion, notre étude nous a permis à la fois de déterminer la variable catégorielle en question avec une bonne précision et de déterminer les hyperparamètres optimaux. Ce travail jette les bases des prédictions et des améliorations futures du modèle. En effet, la méthode de régression linéaire sur les ensembles de données VIC et NSW devrait également être incluse dans les perspectives futures. \n\n
+    En conclusion, notre étude nous a permis à la fois de déterminer la variable catégorielle en question avec une bonne précision et de déterminer les hyperparamètres optimaux. \n\n
     Enfin, il faut souligner que l'utilisation de la bibliothèque missingo montre que l'ensemble de la base de données est caractérisé par un nombre élevé de valeurs manquantes. Par conséquent, il serait intéressant de tester la transférabilité du modèle sur un ensemble de données moins manipulées afin de tester ce protocole prédictif et de mettre en évidence ses performances.\n\n
     Nous avons tenté de prédire la vitesse du vent avec Ridge et Lasso mais les résultats n’ont pas été pas concluants.
 
     """)if page == pages[7]:
-        st.header("Entrainer nos modèles")        st.markdown("""    Choisissez une région \n    """)                st.markdown("""    Choisissez un modèle \n    """)            st.markdown("""    Choisissez un mode \n    """)                
+        st.header("Entrainer nos modèles")        region=st.selectbox("Choisissez une région", ('New South Wales', 'Western Australia', 'Tasmanie'))              st.markdown("""    \n    """)        model=st.selectbox("Choisissez un modèle", ['KNN', 'Random Forest'])        st.markdown("""    \n    """)        model=st.multiselect("votre choix OverSampling", ['Avec', 'Sans'])    st.write('Vous avez choisi le modèle ', model, 'pour la région ',region)        if model=='Avec':                st.write('Vous avez choisi le modèle ', model, 'pour la région ',region, ' avec OverSampling')    else:        st.write('Vous avez choisi le modèle ', model, 'pour la région ',region, ' sans OverSampling')            
