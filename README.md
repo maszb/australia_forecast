@@ -15,6 +15,8 @@ Dans un second temps, on pourra effectuer des prédictions à long terme, en uti
 - [@Bernardino](https://github.com/mbsz21/autraliaWeather)
 - [@Magarh](https://github.com/mbsz21/autraliaWeather)
 
+## Démonstration sur Streamlit
+
 
 ## Stack technique
 
