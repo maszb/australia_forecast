@@ -10,7 +10,7 @@ Dans un second temps, on pourra effectuer des prédictions à long terme, en uti
 
 ## Auteurs
 
-- [@Sandra](https://github.com/mbsz21/autraliaWeather)
+- [@Sandrine](https://github.com/mbsz21/autraliaWeather)
 - [@Zeina](https://github.com/mbsz21/autraliaWeather)
 - [@Bernardino](https://github.com/mbsz21/autraliaWeather)
 - [@Magarh](https://github.com/mbsz21/autraliaWeather)
