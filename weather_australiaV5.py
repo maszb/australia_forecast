@@ -597,14 +597,11 @@ if page == pages[2]:
     st.markdown("")
     st.markdown("")
     st.markdown("""
-    Ci-dessus la répartition des villes radar de notre dataset (en rouge)
-     """)
-
-
+    
     st.image("images//carteaustralie2.png")
     
     st.markdown("""
-    Ci-dessous la répartition des villes radar de notre dataset (en rouge)
+    Ci-dessus la répartition des villes radar de notre dataset (en rouge)
      """)
     st.markdown("")
     st.markdown("")
