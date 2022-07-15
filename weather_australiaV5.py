@@ -596,8 +596,7 @@ if page == pages[2]:
     
     st.markdown("")
     st.markdown("")
-    st.markdown("""
-    
+        
     st.image("images//carteaustralie2.png")
     
     st.markdown("""
