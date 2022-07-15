@@ -842,11 +842,12 @@ if page == pages[5]:
 
     En conclusion, notre étude nous a permis à la fois de déterminer la variable catégorielle en question avec une bonne précision et de déterminer les hyperparamètres optimaux. \n\n
 
-    Enfin, il faut souligner que l'utilisation de la bibliothèque missingo montre que l'ensemble de la base de données est caractérisé par un nombre élevé de valeurs manquantes. Par conséquent, il serait intéressant de tester la transférabilité du modèle sur un ensemble de données moins manipulées afin de tester ce protocole prédictif et de mettre en évidence ses performances.\n\n
+    Enfin, il faut souligner que l'utilisation de la bibliothèque missingo montre que l'ensemble de la base de données est caractérisé par un nombre élevé de valeurs manquantes.\n\n
 
 
     """)
 
+	st.image("images//conclufin.png")
 
 if page == pages[7]:
     st.header("Entrainez nos modèles !")
