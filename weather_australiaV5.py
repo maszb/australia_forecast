@@ -846,8 +846,8 @@ if page == pages[5]:
 
 
     """)
-
-	st.image("images//conclufin.png")
+    
+    st.image("images//conclufin.png")
 
 if page == pages[7]:
     st.header("Entrainez nos modèles !")
