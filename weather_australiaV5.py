@@ -193,7 +193,7 @@ st.title("Australia Forecast")
 
 
 
-pages = ["Introduction", "Datasets", "Exploration des données et visualisation", "Algorithme de traitement des NaN", "Modélisation", "Conclusions","Restitution graphique des prédictions", "Entrainez nos modèles ! ","Lancez une prédiction !"]
+pages = ["Introduction", "Datasets", "Exploration des données et visualisation", "Algorithme de traitement des NaN", "Modélisation", "Conclusions","Restitution graphique des prédictions", "Entrainez nos modèles ! ","La prédiction du 11 avril 2017 !"]
 
 
 
