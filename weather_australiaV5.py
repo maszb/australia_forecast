@@ -476,6 +476,9 @@ if page == pages[2]:
 
 
     """)
+    st.markdown("")
+    st.markdown("")
+    
 
 
 
@@ -565,6 +568,7 @@ if page == pages[2]:
     
     st.markdown("")
     st.markdown("")
+    st.markdown("")
 
 
 
@@ -590,12 +594,18 @@ if page == pages[2]:
 
     st.markdown("")
     st.markdown("")
+    st.markdown("")
     
     st.image("images//carteaustralie1.png")
+    st.markdown("""
+    Radars météo de l'Australie
+     """)
     
     
     st.markdown("")
     st.markdown("")
+    st.markdown("")
+    
         
     st.image("images//carteaustralie2.png")
     
