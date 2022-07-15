@@ -208,7 +208,7 @@ if page == pages[0]:
 
     st.markdown("""
 
-\n\n 
+
 Projet présenté par Zeina ACHKAR, Sandrine ASSERAF, Bernardino TIRRI et Magarh TSILOUONI\n
 Promotion Mai 2022 DataScientest mode Bootcamp\n\n
      
@@ -216,7 +216,7 @@ Promotion Mai 2022 DataScientest mode Bootcamp\n\n
        
  """)
     st.markdown("")
-    
+    st.markdown("")
     st.markdown("""
 \n\nLe dataset contient environ 10 ans d'observations météorologiques quotidiennes provenant de nombreux endroits en Australie.
 
