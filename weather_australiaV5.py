@@ -863,9 +863,8 @@ if page == pages[7]:
     over = st.radio("Votre choix OverSampling", ('Avec', 'Sans'))
     
     st.markdown("""
-
+    Résultats de l'entrainement
     \n\n
-
     """)
 
     if selectionRegion == region[0] and selectionModel == model[0] and over == 'Avec':
