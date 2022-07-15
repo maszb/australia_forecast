@@ -851,16 +851,22 @@ if page == pages[5]:
 
 
 if page == pages[7]:
-    st.header("Simulation des prédictions")
+    st.header("Entrainez nos modèles !")
 
     region  = ["New South Wales", "Western Australia", "Autralia"]
-    model  = ["KNN", "Random Forest Classifier", "Logistic Regression"]
+    model  = ["KNN", "Random Forest", "Logistic Regression"]
     # overSampl = ["Avec", "Sans"]
 
     selectionRegion = st.selectbox('Choisissez une région', options = region)
     selectionModel = st.selectbox('Choisissez un modèle', options = model)
     # over = st.radio("Votre choix OverSampling", options= overSampl)
     over = st.radio("Votre choix OverSampling", ('Avec', 'Sans'))
+    
+    st.markdown("""
+
+    \n\n
+
+    """)
 
     if selectionRegion == region[0] and selectionModel == model[0] and over == 'Avec':
         st.image("images//nsw_knn_avec_over.png")
