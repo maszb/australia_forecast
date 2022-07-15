@@ -282,7 +282,8 @@ Certaines variables marchent par couple :  données à 9 heures du matin et une 
 
     st.dataframe(old_data)
 
-    
+    st.markdown("")
+    st.markdown("")
 
     resumer = st.checkbox('Afficher le résumé')
 
@@ -323,6 +324,8 @@ if page == pages[2]:
     st.image("images//variable1.png")
 
     st.image("images//variable2.png")
+    st.markdown("")
+    st.markdown("")
 
 
 
@@ -389,6 +392,9 @@ if page == pages[2]:
     Le graphique ci-dessus montre une relation linéaire entre les variables prises en considération. La température minimale est d'environ -8 dégré celcius et la maximale est d'environ 48 dégré celcius. La carte satellite de l'Australie montre que, dans les régions du sud-est et du sud-ouest, le climat est plus tempéré, rendant l'air propice à l'implantation humaine ; c'est dans ces régions que l'on trouve les grandes villes australiennes telles que Sydney, Perth ou Melbourne. Étant donné que l'Australie est située dans l'hémisphère sud, la différence de température d'une région à l'autre est moins prononcée, mais en raison de son immensité et de son climat essentiellement aride, les écarts de température peuvent être importants.
 
     """)
+    
+    st.markdown("")
+    st.markdown("")
 
 
 
@@ -446,6 +452,8 @@ if page == pages[2]:
 
 
     """)
+    st.markdown("")
+    st.markdown("")
 
 
 
@@ -508,6 +516,8 @@ if page == pages[2]:
     """)
 
     st.image("images//variable3.png")
+    st.markdown("")
+    st.markdown("")
 
 
 
@@ -552,6 +562,9 @@ if page == pages[2]:
     st.image("images//msn8.png")
 
     st.image("images//msn10.png")
+    
+    st.markdown("")
+    st.markdown("")
 
 
 
@@ -575,15 +588,14 @@ if page == pages[2]:
 
     st.image("images//carteradar.png")
 
-    st.markdown("""
-    \n\n
-    """)
+    st.markdown("")
+    st.markdown("")
     
     st.image("images//carteaustralie1.png")
     
     
-    st.markdown("""
-    \n\n
+    st.markdown("")
+    st.markdown("")
     Ci-dessous la répartition des villes radar de notre dataset (en rouge)
      """)
 
@@ -591,9 +603,11 @@ if page == pages[2]:
     st.image("images//carteaustralie2.png")
     
     st.markdown("""
-    \n\n
     Ci-dessous la répartition des villes radar de notre dataset (en rouge)
      """)
+    st.markdown("")
+    st.markdown("")
+    st.markdown("")
     
     st.header("Etude des séries temporelles")
     
@@ -669,6 +683,8 @@ if page == pages[4]:
 
 
     """)
+    st.markdown("")
+    st.markdown("")
 
     st.subheader("Résultats des entrainements")
 
@@ -713,6 +729,8 @@ if page == pages[4]:
 
 
     """)
+    st.markdown("")
+    st.markdown("")
 
 
     st.subheader("South Australia et Western Australia")
@@ -726,7 +744,9 @@ if page == pages[4]:
 
     """)
     
-    st.image("images//modele2.png")    
+    st.image("images//modele2.png")
+    st.markdown("")
+    st.markdown("")
     
     
     
@@ -739,6 +759,8 @@ if page == pages[4]:
     """)
 
     st.image("images//modele3.png")
+    st.markdown("")
+    st.markdown("")
 
 
 
@@ -752,6 +774,8 @@ if page == pages[4]:
     """)
 
     st.image("images//modele4.png")
+    st.markdown("")
+    st.markdown("")
 
 
 
@@ -788,6 +812,8 @@ if page ==pages[6]:
     """)
 
     st.image("images//graphique1.png")
+    st.markdown("")
+    st.markdown("")
 
     st.markdown("""
 
@@ -798,6 +824,8 @@ if page ==pages[6]:
     """)
 
     st.image("images//graphique2.png")
+    st.markdown("")
+    st.markdown("")
 
 
 
@@ -818,6 +846,8 @@ if page ==pages[6]:
     """)
 
     st.image("images//graphique3.png")
+    st.markdown("")
+    st.markdown("")
 
     st.markdown("""
 
@@ -840,6 +870,7 @@ if page == pages[5]:
     """)
 
     st.image("images//conclusion1.png")
+    st.markdown("")
 
     st.markdown("""
 
@@ -848,6 +879,7 @@ if page == pages[5]:
     """)
 
     st.image("images//conclusion2.png")
+    st.markdown("")
 
     st.markdown("""
 
@@ -859,6 +891,7 @@ if page == pages[5]:
     """)
     
     st.image("images//conclufin.png")
+    st.markdown("")
 
 if page == pages[7]:
     st.header("Entrainez nos modèles !")
@@ -876,6 +909,8 @@ if page == pages[7]:
     Résultats de l'entrainement
     \n\n
     """)
+    st.markdown("")
+    st.markdown("")
 
     if selectionRegion == region[0] and selectionModel == model[0] and over == 'Avec':
         st.image("images//nsw_knn_avec_over.png")
@@ -913,11 +948,10 @@ if page == pages[8]:
     
     region=st.selectbox("Choisissez une région", ('New South Wales', 'Western Australia'))
     
-    st.markdown("""
-
-    \n
-
-    """)
+    st.markdown("")
+    st.markdown("")
+    
+    
            
     st.write('Prédiction du temps sur la région ', region, ' avec RandomForest et OverSampling')
        
