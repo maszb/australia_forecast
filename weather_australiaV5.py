@@ -321,7 +321,7 @@ if page == pages[2]:
 
     Après la phase de préparation des données, une première analyse statistique de la base de données a été réalisée en utilisant la méthode describe. Le résultat est présenté ci-dessous :    """)
 
-    old_data=pd.read_csv("datasets//WeatherAUSFinal.csv",sep=";")
+    old_data=pd.read_csv("datasets//WeatherAUS.csv",sep=";")
 
     st.write(old_data.describe())
 
