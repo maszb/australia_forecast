@@ -204,15 +204,20 @@ page = st.sidebar.radio("Menu", options = pages)
 if page == pages[0]:
 
     st.image("images//image001.jpg")
+    
 
     st.markdown("""
 
-\n\n
+\n\n 
 Projet présenté par Zeina ACHKAR, Sandrine ASSERAF, Bernardino TIRRI et Magarh TSILOUONI\n
 Promotion Mai 2022 DataScientest mode Bootcamp\n\n
-
-
-Cet ensemble de données contient environ 10 ans d'observations météorologiques quotidiennes provenant de nombreux endroits en Australie.
+     
+       
+       
+ """)
+    
+    st.markdown("""
+\n\nCet ensemble de données contient environ 10 ans d'observations météorologiques quotidiennes provenant de nombreux endroits en Australie.
 
 Il y a donc différentes visualisations intéressantes possibles.
 
