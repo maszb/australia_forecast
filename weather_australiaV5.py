@@ -191,12 +191,7 @@ dfW=dfW.drop('week',axis=1)
 
 st.title("Australia Forecast")
 
-st.markdown("""
-\n\n
-Projet présenté par Zeina ACHKAR, Sandrine ASSERAF, Bernardino TIRRI et Magarh TSILOUONI\n
-Promotion Mai 2022 DataScientest mode Bootcamp
 
-""")
 
 pages = ["Introduction", "Datasets", "Exploration des données et visualisation", "Algorithme de traitement des NaN", "Modélisation", "Conclusions","Restitution graphique des prédictions", "Entrainez nos modèles ! ","Lancez une prédiction !"]
 
@@ -211,6 +206,11 @@ if page == pages[0]:
     st.image("images//image001.jpg")
 
     st.markdown("""
+
+\n\n
+Projet présenté par Zeina ACHKAR, Sandrine ASSERAF, Bernardino TIRRI et Magarh TSILOUONI\n
+Promotion Mai 2022 DataScientest mode Bootcamp\n\n
+
 
 Cet ensemble de données contient environ 10 ans d'observations météorologiques quotidiennes provenant de nombreux endroits en Australie.
 
