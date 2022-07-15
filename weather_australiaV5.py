@@ -215,9 +215,10 @@ Promotion Mai 2022 DataScientest mode Bootcamp\n\n
        
        
  """)
+    st.markdown("")
     
     st.markdown("""
-\n\nCet ensemble de données contient environ 10 ans d'observations météorologiques quotidiennes provenant de nombreux endroits en Australie.
+\n\nLe dataset contient environ 10 ans d'observations météorologiques quotidiennes provenant de nombreux endroits en Australie.
 
 Il y a donc différentes visualisations intéressantes possibles.
 
