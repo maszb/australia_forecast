@@ -210,7 +210,7 @@ if page == pages[0]:
 
 
 Projet présenté par Zeina ACHKAR, Sandrine ASSERAF, Bernardino TIRRI et Magarh TSILOUONI\n
-Promotion Mai 2022 DataScientest mode Bootcamp\n\n
+Promotion Mai 2022 - DataScientist mode Bootcamp\n\n
      
        
        
