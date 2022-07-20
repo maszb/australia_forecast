@@ -982,6 +982,30 @@ if page == pages[7]:
         st.image("images//logistique_reg_avec_over.png")
     elif selectionRegion == region[2] and selectionModel == model[2] and over == 'Sans':
         st.image("images//logistique_reg_sans_over.png")
+    elif selectionRegion == region[3] and selectionModel == model[0] and over == 'Avec':
+        st.image("images//south_autralia_knn_avec_over.png")
+    elif selectionRegion == region[3] and selectionModel == model[0] and over == 'Sans':
+        st.image("images//south_autralia_knn_sans_over.png")
+    elif selectionRegion == region[3] and selectionModel == model[1] and over == 'Avec':
+        st.image("images//south_autralia_random_avec_over.png")
+    elif selectionRegion == region[3] and selectionModel == model[1] and over == 'Sans':
+        st.image("images//south_autralia_random_sans_over.png")
+    elif selectionRegion == region[3] and selectionModel == model[2] and over == 'Avec':
+        st.image("images//south_autralia_logistique_avec_over.png")
+    elif selectionRegion == region[3] and selectionModel == model[2] and over == 'Sans':
+        st.image("images//south_autralia_logistique_sans_over.png")
+    elif selectionRegion == region[4] and selectionModel == model[0] and over == 'Avec':
+        st.image("images//victoria_knn_avec_over.png")
+    elif selectionRegion == region[4] and selectionModel == model[0] and over == 'Sans':
+        st.image("images//victoria_knn_sans_over.png")
+    elif selectionRegion == region[4] and selectionModel == model[1] and over == 'Avec':
+        st.image("images//victoria_random_avec_over.png")
+    elif selectionRegion == region[4] and selectionModel == model[1] and over == 'Sans':
+        st.image("images//victoria_random_sans_over.png")
+    elif selectionRegion == region[5] and selectionModel == model[0] and over == 'Avec':
+        st.image("images//nsw_vs_victoria_knn_avec_over.png")
+    elif selectionRegion == region[5] and selectionModel == model[1] and over == 'Avec':
+        st.image("images//nsw_vs_victoria_random_avec_over.png")
 
 
 if page == pages[8]:
