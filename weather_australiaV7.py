@@ -530,7 +530,7 @@ if page == pages[2]:
 
     st.markdown("""
 
-    Comme nous devrons travailler à la journée, nous avons décidé de découper la date en 3 variables supplémentaires : le jour, le mois et l’année.
+    Comme nous devrons travailler à la journée, nous avons décidé de découper la date en 3 variables supplémentaires : le jour, le mois, la semaine et l’année.
 
     """)
 
