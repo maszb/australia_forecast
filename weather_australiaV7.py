@@ -341,7 +341,7 @@ if page == pages[2]:
 
     st.markdown("""
 
-    Sur une période de 8 ans, le tableau montre que les valeurs moyennes des températures minimales et maximales sont respectivement de 12 et 23 degrés Celsius, les valeurs moyennes de pression enregistrées le matin et l'après-midi sont de 1017 et 1015 et la quantité moyenne de pluie est de 2,34 mm. Bien que la plupart des stations météorologiques soient situées sur la côte, où les précipitations sont plus fréquentes que dans la zone centrale, l'Australie est un pays principalement aride et, dans l'ensemble, le pays n'est pas caractérisé par de fortes précipitations. Les quartiles sont également indiqués dans le tableau. Une façon plus simple d'analyser les outils est de représenter graphiquement les données de la trame de données dans ce que l'on appelle le graphique à moustaches. Le graphique est présenté ci-dessous.""")   
+    Sur une période de 8 ans, le tableau montre que les valeurs moyennes des températures minimales et maximales sont respectivement de 12 et 23 degrés Celsius, les valeurs moyennes de pression enregistrées le matin et l'après-midi sont de 1017 et 1015 et la quantité moyenne de pluie est de 2,36 mm. Bien que la plupart des stations météorologiques soient situées sur la côte, où les précipitations sont plus fréquentes que dans la zone centrale, l'Australie est un pays principalement aride et, dans l'ensemble, le pays n'est pas caractérisé par de fortes précipitations. Les quartiles sont également indiqués dans le tableau. Une façon plus simple d'analyser les outils est de représenter graphiquement les données de la trame de données dans ce que l'on appelle le graphique à moustaches. Le graphique est présenté ci-dessous.""")   
 
 
 
@@ -404,7 +404,7 @@ if page == pages[2]:
 
     st.markdown("""
 
-    Nous avons fait de nombreux tests afin d’évaluer les dépendances entre variables. Le code suivant a été exécuté pour 5 variables en lien avec RainTomorrow. Nous ne mettrons pas le détail d’exécution de chaque variable, mais juste les résultats.
+    Nous avons fait de nombreux tests afin d’évaluer les dépendances entre variables. Nous avons fait l'évaluation avec 5 variables en lien avec RainTomorrow. Nous ne mettrons pas le détail d’exécution de chaque variable, mais juste les résultats.
 
     """)
 
@@ -777,7 +777,7 @@ if page == pages[4]:
 
     Comme mentionné dans la section précédente, les données de la variable catégorielle, RainTomorrow, ne sont pas équilibrées. Par conséquent, cela peut entraîner des prédictions peu fiables sur les données examinées. Comme indiqué précédemment dans la section sur les modèles de classification des îles, il a été décidé de traiter les données par la méthode du suréchantillonnage. En outre, compte tenu des prévisions au niveau national, la méthode de régression logistique était coûteuse en termes de calcul. En combinant ces considérations, il a été décidé que pour les régions administratives de Victoria (VIC) et de New South Wales (NSW), les méthodes de classification à employer sont KNN et RandomForest. En outre, notre décision est motivée par le fait que ces deux régions ont le plus grand nombre de stations météorologiques, ce qui pourrait les rendre représentatives de l'ensemble de la base de référence. Afin d'obtenir une image claire, nous avons d'abord choisi de traiter ces deux régions administratives séparément, puis de les traiter ensemble. 
 
-    Le dataset New South Wales comportait xx lignes et celui de Victoria xx lignes
+    Le dataset New South Wales comportait 49 095 lignes et celui de Victoria 23 008 lignes
     """)
 
     st.image("images//modele4.png")
@@ -810,9 +810,9 @@ if page ==pages[6]:
 
     Nous avons donc construit un tableau unique qui prend en compte les villes, les radars et la variable RainTomorrow. Bien que la variable radar n'apparaisse pas dans la carte géographique, il a évolué pour l'inclure afin de faire un double contrôle sur la manipulation correcte du dataframe. La base de données résultante a ensuite été filtrée afin de comparer les données stockées dans la trame de données source avec les données prédites à la même date. \n
 
-    Si le temps est beau alors nous figurerons un soleil, sinon une goutte d’eau.\n
+    S'il ne pleut pas alors nous figurerons un soleil, sinon une goutte d’eau.\n
 
-    Ci-dessous, une image de la variable RainTomorrow pour la journée du 2017/04/2011.
+    Ci-dessous, une image de la variable RainTomorrow pour la journée du 11 avril 2017.
 
 
 
