@@ -889,7 +889,7 @@ if page == pages[5]:
     
     st.markdown("")
    
-    
+    st.header("Et si nous avions eu plus de temps...")
     st.markdown("""
     Ces niveaux de performances (les plus élevés que nous ayons pu obtenir, pour quelques régions seulement et avec un ou deux modèles, tout au plus), nous semblaient pouvoir être encore améliorés. Se rajoute à cela, que pour certaines régions, par exemple pour Western Australia et pour New South Wales, nous avions obtenu des résultats très proches pour deux classifieurs (voire pour 3 classifieurs dans le cas de Western Australia), on pouvait difficilement trancher, mis à part dire que dans le cas de performances quasi équivalentes, nous privilégierons le modèle le plus rapide, en termes de temps de traitement.
     Cette démarche et les résultats qui en découlent, décrits plus haut, nous ont amené à réfléchir et à dégager plusieurs axes d’amélioration potentielle, ou disons plusieurs axes à approfondir, en vue d’améliorations potentielles.
