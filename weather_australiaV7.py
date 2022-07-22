@@ -899,8 +899,10 @@ if page == pages[5]:
     """)
 
     st.markdown("")
+    st.subheader("1)	L’utilisation des Réseaux Neuronaux Denses")
+    st.markdown("")
     st.markdown("""
-    1)	L’utilisation des Réseaux Neuronaux Denses :\n
+    
     Avec les récents cours que nous avons étudié ces deux dernières semaines, nous sommes persuadés que le test des Réseaux de Neurones Dense, pourrait donner des résultats probants à notre problématique. Plusieurs scenarii peuvent être envisagés, seulement, nous ne sommes pas sûrs d’être bien équipés, au niveau matériel, pour pouvoir mener à bien ces tests. Et pour une question de délai de rendu du projet, et la charge de travail au niveau des sprints, nous ne nous sommes pas aventurés à tester cavalièrement cette possibilité de solution, qui porte en elle beaucoup potentiel, et qui mérite qu’on lui accorde tout le temps et le matériel nécessaire.
 
 
@@ -910,9 +912,9 @@ if page == pages[5]:
     st.markdown("")
     st.markdown("")
     
+    st.subheader("2)	L’utilisation des Séries Temporelles")
     st.markdown("""
 
-    2)	L’utilisation des Séries Temporelles :\n
     Nous avons tenté d’utiliser les Séries Temporelles pour prédire les deux variables MaxTemp et MinTemp, qui sont les variables donnant la température maximale et la température minimale de la journée, et qui présentent nettement des caractéristiques saisonnières annuelles (les essais sont dans nos Jupyter Notebooks), mais ces essais ont été voués à l’échec, par manque de capacité de mémoire vive (RAM) sur nos machines. Au départ, nous avions considéré pour une seule région (la plus petite 2944 lignes, équivalent d’une ville) , un jeu de données sur 7 ans, que nous avons réduit à 3 ans et demi, après l’échec du premier calcul. Mais, même avec un jeu de données réduit pour une seule ville à 3 ans et demi, nous n’avons pas pu malheureusement obtenir de résultats, car les calculs n’ont pas abouti pour les mêmes raisons de capacité mémoire, que précédemment.
     C’est bien dommage, car nous avions l’intention d’explorer les Séries Temporelles pour les variables de Températures, de Vitesse du Vent, et pourquoi pas aussi pour « RainTomorrow ». 
 
@@ -922,9 +924,9 @@ if page == pages[5]:
     st.markdown("")
     st.markdown("")
     
+    st.subheader("3)	L’utilisation d’un jeu de données plus complet au départ, et moins travaillé par nos propres moyens")
     st.markdown("""
 
-    3)	L’utilisation d’un jeu de données plus complet au départ, et moins travaillé par nos propres moyens :\n
     Nous avions à cœur aussi de tester les modèles que nous avions entraînés pour ce projet, sur un jeu de données météo, plus complet et plus précis, que celui que nous avons eu au départ ; notre jeu de données de départ avait énormément de valeurs manquantes, que nous avons réussi à combler, avec les algorithmes de calcul et des stratégies décrites plus haut dans le cadre de ce rapport.
     Nous avons réussi à obtenir un jeu de données sans valeurs manquantes de 133 963 lignes. 
     Nous aurions préféré avoir plus de temps pour récolter et compléter auprès de sources plus fiables (que nos manipulations), comme les différents ministères et les sources gouvernementales australiennes, notre jeu de données initial, mais malheureusement nous ne l’avons pas fait, pour une question de temps accordé, essentiellement. 
