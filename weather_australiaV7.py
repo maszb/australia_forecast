@@ -252,7 +252,7 @@ if page == pages[1]:
 
     st.markdown("""
 
-    Nous avons travaillé sur un fichier csv (weatherAUS.csv). Ce dataset fournit des données météorologiques de 49 villes d’Australie entre 2009 et 2017. Le jeu de données initial comportait 145 460 lignes et 23 colonnes. 
+    Nous avons travaillé sur un fichier csv (weatherAUS.csv). Ce dataset fournit des données météorologiques de 49 villes d’Australie entre 2007 et 2017. Le jeu de données initial comportait 145 460 lignes et 23 colonnes. 
 
     La variable à prédire est RainTomorrow. Elle est renseignée à Yes ou No.
 
