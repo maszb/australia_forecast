@@ -883,7 +883,7 @@ if page == pages[5]:
 
     st.markdown("""
 
-    En effet, nous avons alors noté de légères améliorations quant aux performances, des prédictions, mais nous ne dépassons pas la valeur 0.70 en f1-score de la partie positive (qui est minoritaire) de la variable à prédire « RainTomorrow », pour un f1-score global (valeurs positive et négative – « yes, no » – « 1,0 ») de cette variable à 0.86 au mieux.
+    En effet, nous avons alors noté de légères améliorations quant aux performances, des prédictions, mais nous ne dépassons pas la valeur 0.72 en f1-score de la partie positive (qui est minoritaire) de la variable à prédire « RainTomorrow », pour un f1-score global (valeurs positive et négative – « yes, no » – « 1,0 ») de cette variable à 0.86 au mieux.
 
     """)
     
@@ -897,18 +897,18 @@ if page == pages[5]:
     Ces axes que nous n’avons pas eu le temps ou les moyens de creuser davantage durant le temps imparti pour le projet. Nous distinguons :\n
 
     """)
-
     st.markdown("")
-    st.subheader("1)	L’utilisation des Réseaux Neuronaux Denses")
-    st.markdown("")
+    st.subheader("1)	L’utilisation d’un jeu de données plus complet au départ, et moins travaillé par nos propres moyens")
     st.markdown("""
-    
-    Avec les récents cours que nous avons étudié ces deux dernières semaines, nous sommes persuadés que le test des Réseaux de Neurones Dense, pourrait donner des résultats probants à notre problématique. Plusieurs scenarii peuvent être envisagés, seulement, nous ne sommes pas sûrs d’être bien équipés, au niveau matériel, pour pouvoir mener à bien ces tests. Et pour une question de délai de rendu du projet, et la charge de travail au niveau des sprints, nous ne nous sommes pas aventurés à tester cavalièrement cette possibilité de solution, qui porte en elle beaucoup potentiel, et qui mérite qu’on lui accorde tout le temps et le matériel nécessaire.
+
+    Nous avions à cœur aussi de tester les modèles que nous avions entraînés pour ce projet, sur un jeu de données météo, plus complet et plus précis, que celui que nous avons eu au départ ; notre jeu de données de départ avait énormément de valeurs manquantes, que nous avons réussi à combler, avec les algorithmes de calcul et des stratégies décrites plus haut dans le cadre de ce rapport.
+    Nous avons réussi à obtenir un jeu de données sans valeurs manquantes de 133 963 lignes. 
+    Nous aurions préféré avoir plus de temps pour récolter et compléter auprès de sources plus fiables (que nos manipulations), comme les différents ministères et les sources gouvernementales australiennes, notre jeu de données initial, mais malheureusement nous ne l’avons pas fait, pour une question de temps accordé, essentiellement. 
 
 
     """)
-    
-    st.image("images//conclusion_2.png")
+    st.markdown("")
+    st.image("images//conclusion_4.png")
     st.markdown("")
     st.markdown("")
     
@@ -924,17 +924,17 @@ if page == pages[5]:
     st.markdown("")
     st.markdown("")
     
-    st.subheader("3)	L’utilisation d’un jeu de données plus complet au départ, et moins travaillé par nos propres moyens")
+    st.subheader("3)	L’utilisation des Réseaux Neuronaux Denses")
+    st.markdown("")
     st.markdown("""
-
-    Nous avions à cœur aussi de tester les modèles que nous avions entraînés pour ce projet, sur un jeu de données météo, plus complet et plus précis, que celui que nous avons eu au départ ; notre jeu de données de départ avait énormément de valeurs manquantes, que nous avons réussi à combler, avec les algorithmes de calcul et des stratégies décrites plus haut dans le cadre de ce rapport.
-    Nous avons réussi à obtenir un jeu de données sans valeurs manquantes de 133 963 lignes. 
-    Nous aurions préféré avoir plus de temps pour récolter et compléter auprès de sources plus fiables (que nos manipulations), comme les différents ministères et les sources gouvernementales australiennes, notre jeu de données initial, mais malheureusement nous ne l’avons pas fait, pour une question de temps accordé, essentiellement. 
+    
+    Avec les récents cours que nous avons étudié ces deux dernières semaines, nous sommes persuadés que le test des Réseaux de Neurones Dense, pourrait donner des résultats probants à notre problématique. Plusieurs scenarii peuvent être envisagés, seulement, nous ne sommes pas sûrs d’être bien équipés, au niveau matériel, pour pouvoir mener à bien ces tests. Et pour une question de délai de rendu du projet, et la charge de travail au niveau des sprints, nous ne nous sommes pas aventurés à tester cavalièrement cette possibilité de solution, qui porte en elle beaucoup potentiel, et qui mérite qu’on lui accorde tout le temps et le matériel nécessaire.
 
 
     """)
+    
+    st.image("images//conclusion_2.png")
     st.markdown("")
-    st.image("images//conclusion_4.png")
     st.markdown("")
 
 if page == pages[7]:
